@@ -1,38 +1,178 @@
-.App {
-  text-align: center;
+.App-header{
+  display: flex;
+  position: fixed;
+  margin-left: 15px;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.Menu{
+  margin-top: 300px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  display: flex;
+  position: fixed;
+  flex-direction: column;
+  height: 100vh;
+  width: 200px;
+  margin-left: 20px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.Menu p {
+  cursor: pointer;
+  transition: color 0.2s;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.Menu p:hover {
+  color: gray;
+}
+.Conteudo {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  margin-left: 200px;
+}
+.Feed {
   display: flex;
   flex-direction: column;
+  margin-left: 300px;
+}
+.Post-Header{
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+.Post {
+  width: 470px;
+  border: 1px solid #dbdbdb;
+  border-radius: 8px;
+  padding: 15px;
+  margin-top: 50px;
+}
+.Avatar{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.Usuario-Post{
+  font-weight: bold;
+  margin-top: 5px;
+  font-size: 20px;
+}
+.Foto-Post{
+  border-radius: 5px;
+  width: 100%;
+}
+.Sugestoes-Voce {
+  display: flex;
+  flex-direction: row;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  gap: 10px;
+  width: 100%;
+  margin-bottom: 10px;
+}
+.Perfis {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  padding: 15px;
+  margin-top: 50px;
+  margin-left: 130px;
+}
+.Avatar-Sugestao {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.Usuario-Sugestao{
+  font-weight: bold;
+}
+#sugestoes{
+  font-weight: bold;
+}
+#Seguir {
+  color: blue;
+  margin-left: auto;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+#Seguir:hover {
+  color: darkblue;
+}
+.Seu-Perfil {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+}
+#Foto-Perfil{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+#Nome-Perfil{
+  border-left: 5px;
+  font-weight: bold;
+}
+#Editar-Perfil {
+  color: blue;
+  margin-left: auto;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+#Editar-Perfil:hover {
+  color: darkblue;
+}
+.Metricas{
+  display: flex;
+  align-items: center;
+  padding: 0px;
+  margin-left: 15px;
+}
+#Comentario-Post{
+  width: 30px;
+  margin-left: 20px;
+  cursor: pointer;
+}
+#Coracao-Post{
+  width: 30px;
+  cursor: pointer;
+}
+#Compartilhar-Post{
+  width: 30px;
+  margin-left: 20px;
+  cursor: pointer;
+}
+.Legenda-Post{
+  margin-left: 15px;
+  margin-top: 5px;
+}
+.Likes-Post{
+  margin-right: 0px;
+  font-size: 20px;
+  margin-left: 5px;
+}
+.Botao-Mensagens {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #1a1a1a;
   color: white;
+  border: none;
+  border-radius: 50px;
+  padding: 12px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
 }
-
-.App-link {
-  color: #61dafb;
+.Botao-Mensagens:hover {
+  background-color: #333;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Botao-Mensagens img {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  object-fit: cover;
 }
