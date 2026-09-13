@@ -6,7 +6,7 @@ import coracaoVermelho from '../imagens/coracaovermelho.png'
 import { useState } from 'react'
 import knight from "../imagens/knight.jpg"
 import cornifer from "../imagens/cornifer.webp"
-import grimm from "../imagens/grimm.webp"
+import grimm from "../imagens/grimm.png"
 import paleking from "../imagens/paleking.png"
 import hornet from "../imagens/hornet.webp"
 import quirrel from "../imagens/quirrel.png"
